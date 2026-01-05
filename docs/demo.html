@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aadhaar Centre Health Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+    .green { background-color: #4CAF50; color: white; }
+    .yellow { background-color: #FFC107; color: black; }
+    .red { background-color: #F44336; color: white; }
+    .card {
+      width: 80%;
+      margin: 10px auto;
+      padding: 15px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin: 0 0 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Aadhaar Centre Health Dashboard</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Centre ID</th>
+        <th>Status</th>
+        <th>Risk Probability</th>
+        <th>Expected Delay</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>C101</td>
+        <td class="green">Healthy 🟢</td>
+        <td>12%</td>
+        <td>+0.5 days</td>
+      </tr>
+      <tr>
+        <td>C330</td>
+        <td class="yellow">Warning 🟡</td>
+        <td>45%</td>
+        <td>+3 days</td>
+      </tr>
+      <tr>
+        <td>C205</td>
+        <td class="red">High-Risk 🔴</td>
+        <td>82%</td>
+        <td>+6 days</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="card">
+    <h3>Centre C205 Risk Explanation:</h3>
+    <ul>
+      <li>Failure rate increased by 18%</li>
+      <li>Average delay increased by 5 days</li>
+      <li>Request load 1.7× normal</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Centre C101 Health Explanation:</h3>
+    <ul>
+      <li>Success rate > 98%</li>
+      <li>Stable processing time</li>
+      <li>Normal request load</li>
+    </ul>
+  </div>
+
+</body>
+</html>
