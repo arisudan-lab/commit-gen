@@ -1,3 +1,4 @@
 ﻿# commit-gen
 
-blabbblaaa
+blabbblaaa!
+
